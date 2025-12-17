@@ -1,0 +1,90 @@
+# -------------------------
+# Code Composer / Eclipse
+# -------------------------
+
+# Workspace metadata and browser cache (large, user-specific)
+.metadata/
+.jxbrowser-data/
+workspace*/
+**/.metadata/
+**/.jxbrowser-data/
+
+# Eclipse / CCS temporary files
+RemoteSystemsTempFiles/
+.history/
+*.log
+*.bak
+*.tmp
+*.cache
+
+# Build output directories (common)
+Debug/
+Release/
+**/Debug/
+**/Release/
+
+# Build artifacts and object files
+*.o
+*.obj
+*.d
+*.dSYM/
+*.out
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.sym
+
+# Static / link libraries and executables (often large)
+*.lib
+*.a
+*.dll
+*.so
+*.exe
+
+# Generated makefiles, intermediate files
+ccsObjs.opt
+objects.mk
+ccsObjs/*
+*.opt
+*.depend
+
+# IDE / user-specific settings (do not commit per-user prefs)
+*.launch
+*.user
+*.swp
+*~
+.vscode/
+.idea/
+
+# Optional: caches or runtime folders that can appear under projects
+*.ccs.cache/
+*.ccsbuild/
+
+# -------------------------
+# Keep (do not ignore) — project sources and necessary project descriptors
+# -------------------------
+# Keep common project descriptor files so other developers can import the project
+!.project
+!.cproject
+!.ccsproject
+!.cdtproject
+!.cdtbuild
+!.ccxml
+!.cmd       # linker scripts (keep)
+!Makefile
+!makefile
+!*.mk
+
+# Keep source and header trees by default (adjust if your source folders differ)
+!/source/
+!/src/
+!/include/
+!/inc/
+!/lib/README  # if you have a README in lib and want to keep it; otherwise libs are ignored above
+
+# If you want to include specific third-party libraries under a folder, add exceptions:
+# Example to keep only README in lib/ and ignore binary libs:
+# !/lib/README
+
