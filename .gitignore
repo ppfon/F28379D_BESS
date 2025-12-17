@@ -5,7 +5,7 @@
 # Workspace metadata and browser cache (large, user-specific)
 .metadata/
 .jxbrowser-data/
-workspace*/
+#workspace*/
 **/.metadata/
 **/.jxbrowser-data/
 
